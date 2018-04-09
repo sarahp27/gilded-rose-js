@@ -2,3 +2,13 @@
 *~
 *.bak
 .DS_Store
+
+# node
+node_modules/
+.nyc_output/
+
+# idea
+.idea/
+*.ipr
+*.iml
+*.iws
