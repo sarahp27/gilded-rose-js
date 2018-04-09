@@ -11,6 +11,7 @@
     "nyc": "^11.6.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "nyc mocha"
   }
 }
