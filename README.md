@@ -8,10 +8,11 @@ The Gilded Rose is a famous kata (or exercise) in OO, testing, and refactoring l
 
 1. Watch [this video](https://www.youtube.com/watch?v=8bZh5LMaSmE) by Sandi Metz.
 1. Fork & clone this repository
-1. Use IntelliJ's code coverage tool to write tests that increase coverage to **100%**
-1. Add `else` statements when appropriate to make sure you have 100% branch as well as 100% line coverage.
+1. yarn install
+1. yarn test (to insure tests run without problems before refactoring)
 1. Refactor, following the example set by Ms. Metz
 1. Verify the tests still pass
+1. If time allows uncomment the "Conjured Item" tests and extend the solution to turn them green.
 
 ***Node: do not alter the 40 line if statement. Rewrite it then delete it like in the video.***
 
@@ -24,3 +25,8 @@ Use IntelliJ's run with coverage feature:
 ![coverage](./img/coverage.png)
 
 Observe the red lines of code and turn them green!
+
+
+### Additional information
+
+[Original Descripton of Gilded Rose](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/)
