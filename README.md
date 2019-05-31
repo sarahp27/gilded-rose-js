@@ -8,8 +8,8 @@ The Gilded Rose is a famous kata (or exercise) in OO, testing, and refactoring l
 
 1. Watch [this video](https://www.youtube.com/watch?v=8bZh5LMaSmE) by Sandi Metz.
 1. Fork & clone this repository
-1. yarn install
-1. yarn test (to insure tests run without problems before refactoring)
+1. npm install
+1. npm test (to insure tests run without problems before refactoring)
 1. Refactor, following the example set by Ms. Metz
 1. Verify the tests still pass
 1. If time allows uncomment the "Conjured Item" tests and extend the solution to turn them green.
