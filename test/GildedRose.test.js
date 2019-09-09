@@ -126,7 +126,7 @@ describe('Backstage passes to a TAFKAL80ETC concert', () => {
 
 // describe('Conjured Item', () => {
 //     it('degrades faster than normal', () => {
-//         const item = new GildedRose('Conured Item', 10, 5);
+//         const item = new GildedRose('Conjured Item', 10, 5);
 //         item.tick();
 //
 //         expect(item.quality).to.equal(8);
