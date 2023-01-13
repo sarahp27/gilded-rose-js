@@ -29,4 +29,4 @@ Observe the red lines of code and turn them green!
 
 ### Additional information
 
-[Original Descripton of Gilded Rose](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/)
+[Original Descripton of Gilded Rose](https://codingdojo.org/kata/gilded-rose/)
