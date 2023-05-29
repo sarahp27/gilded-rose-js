@@ -47,10 +47,12 @@ describe('NormalItem', function () {
 
 });
 
-//
 
+//Describing Test Cases for Sulfuras, Hand of Ragnaros
 
 describe('Sulfuras, Hand of Ragnaros', () => {
+
+    //Test Case 1
     it(`shouldn't lose quality`, () => {
         const item = new GildedRose('Sulfuras, Hand of Ragnaros', 1, 5);
         item.tick();
@@ -59,6 +61,7 @@ describe('Sulfuras, Hand of Ragnaros', () => {
         expect(item.daysRemaining).to.equal(5);
     })
 
+    //Test Case 2
     it(`negative days remaining`, () => {
         const item = new GildedRose('Sulfuras, Hand of Ragnaros', 1, -1);
         item.tick();
@@ -68,7 +71,11 @@ describe('Sulfuras, Hand of Ragnaros', () => {
     })
 })
 
+
+//Describing Test Cases for Age of BRie 
 describe('Age of Brie', () => {
+
+    //Test Case 1
     it('Quality goes up', () => {
         const item = new GildedRose('Aged Brie', 10, 5);
         item.tick();
@@ -77,6 +84,7 @@ describe('Age of Brie', () => {
         expect(item.daysRemaining).to.equal(4);
     })
 
+    //Test Case 2
     it('Is never better than 50', () => {
         const item = new GildedRose('Aged Brie', 50, 5);
         item.tick();
@@ -85,6 +93,7 @@ describe('Age of Brie', () => {
         expect(item.daysRemaining).to.equal(4);
     })
 
+    //Test Case 3
     it('negative days remaining', () => {
         const item = new GildedRose('Aged Brie', 50, -1);
         item.tick();
@@ -92,6 +101,7 @@ describe('Age of Brie', () => {
         expect(item.quality).to.equal(50);
         expect(item.daysRemaining).to.equal(-2);
     })
+    //Test Case 4
 
     it('gets better faster', () => {
         const item = new GildedRose('Aged Brie', 40, -1);
@@ -102,7 +112,11 @@ describe('Age of Brie', () => {
     })
 })
 
+
+//Describing Test Cases for Backstage passes
 describe('Backstage passes to a TAFKAL80ETC concert', () => {
+
+    //Test Case 1
     it('get better fast', () => {
         const item = new GildedRose('Backstage passes to a TAFKAL80ETC concert', 10, 5);
         item.tick();
@@ -111,6 +125,7 @@ describe('Backstage passes to a TAFKAL80ETC concert', () => {
         expect(item.daysRemaining).to.equal(4);
     })
 
+    //Test CAse 2
     it('Never better than 50', () => {
         const item = new GildedRose('Backstage passes to a TAFKAL80ETC concert', 49, 5);
         item.tick();
@@ -118,6 +133,8 @@ describe('Backstage passes to a TAFKAL80ETC concert', () => {
         expect(item.quality).to.equal(50);
         expect(item.daysRemaining).to.equal(4);
     })
+
+    //Test Case 3
 
     it('maxes out at 50', () => {
         const item = new GildedRose('Backstage passes to a TAFKAL80ETC concert', 49, 12);
@@ -127,6 +144,7 @@ describe('Backstage passes to a TAFKAL80ETC concert', () => {
         expect(item.daysRemaining).to.equal(11);
     })
 
+    //Test Case 4
     it('useless after show', () => {
         const item = new GildedRose('Backstage passes to a TAFKAL80ETC concert', 49, -1);
         item.tick();

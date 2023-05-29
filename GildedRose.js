@@ -51,11 +51,11 @@ class GildedRose {
     }
   
     updateExpireItem() {
-      if (this.name !== 'Aged Brie') {
+      if (this.name !== 'Aged Brie' ) {
         if (this.name !== 'Backstage passes to a TAFKAL80ETC concert')
          
         {
-          if (this.quality > 0) {
+          if (this.quality > 1) {
             this.quality -= 1;
           }
         } else {
