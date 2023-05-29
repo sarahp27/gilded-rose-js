@@ -2,7 +2,11 @@ const expect = require('chai').expect;
 
 const GildedRose = require('../GildedRose.js');
 
+//Describing Test Cases for Normal Item 
+
 describe('NormalItem', function () {
+
+    //Test Case 1
 
     it('before sell by date', function () {
         const item = new GildedRose('normal', 10, 5);
@@ -12,6 +16,7 @@ describe('NormalItem', function () {
         expect(item.daysRemaining).to.equal(4);
     });
 
+    //Test Case 2
     it('quality of zero', function () {
         const item = new GildedRose('normal', 0, 5);
         item.tick();
@@ -20,6 +25,8 @@ describe('NormalItem', function () {
         expect(item.daysRemaining).to.equal(4);
     });
 
+
+    //Test Case 3
     it('negative days remaining 0 quality', function () {
         const item = new GildedRose('normal', 0, -1);
         item.tick();
@@ -27,6 +34,8 @@ describe('NormalItem', function () {
         expect(item.quality).to.equal(0);
         expect(item.daysRemaining).to.equal(-2);
     });
+
+    //Test Case 4
 
     it('negative days remaining high quality', function () {
         const item = new GildedRose('normal', 10, -1);
@@ -37,6 +46,9 @@ describe('NormalItem', function () {
     });
 
 });
+
+//
+
 
 describe('Sulfuras, Hand of Ragnaros', () => {
     it(`shouldn't lose quality`, () => {
@@ -56,7 +68,7 @@ describe('Sulfuras, Hand of Ragnaros', () => {
     })
 })
 
-describe('Aged Brie', () => {
+describe('Age of Brie', () => {
     it('Quality goes up', () => {
         const item = new GildedRose('Aged Brie', 10, 5);
         item.tick();
